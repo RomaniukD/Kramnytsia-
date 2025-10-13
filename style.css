@@ -106,7 +106,17 @@
       padding: 1rem;
       border-top: 1px solid var(--border);
     }
+#textBlock {
+  border: 1px solid rgb(102, 138, 138); 
+  background-color: rgba(102, 138, 138, 0.5);  
+  width: max-content; 
+  border-radius: 3px;
+}
 
+#copyBtn {
+  background-color: rgb(106, 131, 131); 
+  border-radius: 3px;
+}
     @media (max-width: 480px) {
       header h1 {
         font-size: 1.5rem;
