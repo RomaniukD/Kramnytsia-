@@ -114,9 +114,12 @@
 }
 
 #copyBtn {
-  background-color: rgb(106, 131, 131); 
-  border-radius: 3px;
-  font-size:16px
+  background-color: rgba(106, 131, 131, 0.74); 
+  border: none;
+  font-size: 16px;
+  width: max-content;
+  height: max-content;
+  color:#222;
 }
     @media (max-width: 480px) {
       header h1 {
@@ -131,4 +134,5 @@ a {
     text-decoration: none;
     color: #222;
 }
+
 
