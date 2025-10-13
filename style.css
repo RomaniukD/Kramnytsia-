@@ -1,6 +1,5 @@
 :root {
       --bg: #f4f7fc;
-      --card-bg: #fff;
       --text: #222;
       --subtext: #555;
       --border: #ddd;
@@ -9,7 +8,8 @@
 
     body {
       font-family: "Inter", Arial, sans-serif;
-      background: var(--bg);
+      background: #2A7B9B;
+      background: linear-gradient(90deg, rgba(42, 123, 155, 1) 0%, rgba(87, 199, 133, 1) 50%, rgba(237, 221, 83, 1) 100%);
       margin: 0;
       padding: 0;
       color: var(--text);
@@ -41,7 +41,7 @@
     }
 
     .card {
-      background: var(--card-bg);
+      background-color: rgb(199, 199, 199);
       border: 1px solid var(--border);
       border-radius: 10px;
       padding: 1.5rem;
@@ -101,6 +101,7 @@
 
     footer {
       text-align: center;
+      background-color: var(--bg);
       color: var(--subtext);
       font-size: 0.9rem;
       padding: 1rem;
@@ -108,9 +109,10 @@
     }
 #textBlock {
   border: 1px solid rgb(102, 138, 138); 
-  background-color: rgba(102, 138, 138, 0.5);  
+  background-color: rgb(255, 255, 255);  
   width: max-content; 
   border-radius: 3px;
+  
 }
 
 #copyBtn {
@@ -120,6 +122,7 @@
   width: max-content;
   height: max-content;
   color:#222;
+
 }
     @media (max-width: 480px) {
       header h1 {
@@ -134,5 +137,3 @@ a {
     text-decoration: none;
     color: #222;
 }
-
-
