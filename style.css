@@ -93,10 +93,12 @@
       align-items: center;
       justify-content: center;
       gap: 0.5rem;
+       transition: 0.5s;
     }
 
     .buttons button:hover {
       background: var(--bg);
+       transition: 0.5s;
     }
 
     footer {
@@ -107,6 +109,19 @@
       padding: 1rem;
       border-top: 1px solid var(--border);
     }
+
+    #middle_button {
+      background-color: rgb(199, 199, 199);
+      height: 200px;
+      width: 80%;
+      border-radius: 10px;
+       transition: 0.5s;
+    }
+#middle_button:hover {
+  background-color: rgb(151, 151, 151);
+  transition: 0.5s;
+}
+
 #textBlock {
   border: 1px solid rgb(102, 138, 138); 
   background-color: rgb(255, 255, 255);  
@@ -116,7 +131,7 @@
 }
 
 #copyBtn {
-  background-color: rgba(106, 131, 131, 0.74); 
+  background-color: rgba(106, 131, 131, 0.74);
   border: none;
   font-size: 16px;
   width: max-content;
