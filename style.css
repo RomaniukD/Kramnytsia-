@@ -116,6 +116,7 @@
 #copyBtn {
   background-color: rgb(106, 131, 131); 
   border-radius: 3px;
+  font-size:16px
 }
     @media (max-width: 480px) {
       header h1 {
@@ -130,3 +131,4 @@ a {
     text-decoration: none;
     color: #222;
 }
+
