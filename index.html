@@ -80,8 +80,9 @@
           <h2>ФОП Годунко Олександр Іванович</h2>
           <p><strong>IBAN (УНІВЕРСАЛ БАНК):</strong></p>
           <p id="textBlock">UA143052990000026007000814805
-            <button id="copyBtn" >Скопіювати</button>
+            <button id="copyBtn">Скопіювати</button> 
           </p>
+
           <p><strong>ЄДРПОУ:</strong></p>
           <p>2621503452</p>
           <p><strong>Призначення платежу:</strong></p>
@@ -94,10 +95,9 @@
   </footer>
   <script>
   const btn = document.getElementById('copyBtn');
-  const text = document.getElementById('textBlock').innerText.trim();
 
   btn.addEventListener('click', async () => {
-  navigator.clipboard.writeText(text);
+  navigator.clipboard.writeText(UA143052990000026007000814805);
   btn.textContent = '✅ Скопійовано';
      
   });
