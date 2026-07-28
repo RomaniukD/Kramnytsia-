@@ -624,6 +624,138 @@ button.action-link {
   opacity: 0.86;
 }
 
+.product-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 12px;
+}
+
+.product-card {
+  min-width: 0;
+  padding: 16px;
+  border: 1px solid rgba(163, 128, 143, 0.22);
+  border-radius: 8px;
+  background: rgba(255, 255, 255, 0.52);
+  display: grid;
+  gap: 12px;
+}
+
+.product-media {
+  width: 100%;
+  aspect-ratio: 1 / 1;
+  border-radius: 8px;
+  background: rgba(255, 255, 255, 0.65);
+  overflow: hidden;
+}
+
+.product-media img {
+  width: 100%;
+  height: 100%;
+  display: block;
+  object-fit: cover;
+}
+
+.product-topline,
+.product-meta,
+.product-actions {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 8px;
+}
+
+.product-topline {
+  justify-content: space-between;
+}
+
+.product-code,
+.product-stock,
+.product-meta span {
+  width: max-content;
+  max-width: 100%;
+  padding: 5px 8px;
+  border-radius: 999px;
+  font-size: 0.7rem;
+  font-weight: 900;
+  line-height: 1;
+}
+
+.product-code {
+  color: #1476b5;
+  background: rgba(54, 169, 238, 0.12);
+}
+
+.product-stock {
+  color: #1f7c4a;
+  background: rgba(70, 180, 118, 0.14);
+}
+
+.product-card h3 {
+  margin: 0;
+  color: var(--rose-dark);
+  font-size: 1.08rem;
+  line-height: 1.3;
+}
+
+.product-card p {
+  margin: 0;
+  color: var(--text);
+  line-height: 1.5;
+}
+
+.product-meta span {
+  color: var(--muted);
+  background: rgba(255, 255, 255, 0.7);
+}
+
+.product-price {
+  color: var(--text);
+  font-size: 1.7rem;
+  line-height: 1;
+}
+
+.product-actions {
+  align-items: stretch;
+}
+
+.product-buy,
+.product-message {
+  min-height: 42px;
+  padding: 10px 12px;
+  border-radius: 8px;
+  font-weight: 900;
+  line-height: 1.15;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.product-buy {
+  min-width: 112px;
+  color: #ffffff;
+  background: linear-gradient(135deg, #d92c7c, #1ab8d4);
+  box-shadow: 0 10px 22px rgba(102, 35, 84, 0.16);
+}
+
+.product-message {
+  color: var(--rose-dark);
+  background: rgba(255, 255, 255, 0.72);
+  border: 1px solid rgba(217, 44, 124, 0.18);
+}
+
+.product-buy:focus-visible,
+.product-message:focus-visible {
+  outline: 3px solid rgba(217, 44, 124, 0.28);
+  outline-offset: 3px;
+}
+
+.product-note {
+  margin: 14px 0 0;
+  color: var(--muted);
+  line-height: 1.5;
+}
+
 .payment-options {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
