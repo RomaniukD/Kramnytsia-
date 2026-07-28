@@ -1,4 +1,21 @@
 {
   "$schema": "https://openapi.vercel.sh/vercel.json",
-  "outputDirectory": "."
+  "outputDirectory": ".",
+  "routes": [
+    {
+      "src": "/",
+      "methods": ["POST"],
+      "dest": "/api/payment-return.js"
+    },
+    {
+      "src": "/payment-success\\.html",
+      "methods": ["POST"],
+      "dest": "/api/payment-return.js"
+    },
+    {
+      "src": "/payment-failed\\.html",
+      "methods": ["POST"],
+      "dest": "/api/payment-return.js"
+    }
+  ]
 }
